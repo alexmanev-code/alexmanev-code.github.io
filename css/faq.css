@@ -10,3 +10,16 @@ body{
     background-color: #61766E;
     padding: 2em;
 }
+
+header{
+    max-height: 100%;
+    box-shadow: 0 0 1em 0 rgb(0, 0, 0, 0.1);
+}
+
+.text-container{
+    background-color:#E35C53;
+    text-align:center;
+    box-shadow: 0 0 1em 0 rgb(0, 0, 0,0.1);
+    border-radius: 1em;
+    color: #000000;
+}
