@@ -1,0 +1,12 @@
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font: 16px/1.5 Lato, sans-serif;
+    background-color: #002837;
+    padding: 2em;
+}
