@@ -1,69 +1,4 @@
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-}
 
-body{
-    font-family: "Nerko One",cursive ;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 20px;
-    background-color: #5a5454;
-    color: white;
-}
-
-
-nav{
-    display: flex;
-    flex-wrap: wrap;
-    max-width: 30%;
-    margin: 1em auto;   
-    text-align: center;
-    justify-content:center;
-    color: #000000;
-}
-
-nav a{
-    color: black;
-    text-decoration: none;
-    padding: 0.7em;
-    margin: 0.5em;
-    border-radius: 4em;
-    background: #eee;
-    box-shadow: 0 0 1em 0 rgb(0, 0, 0, 0.1);
-}
-
-nav a:hover{
-    color:white
-}
-
-nav a:nth-child(1):hover{
-    background-color: #543050;
-    box-shadow: 0 0 1em 0 rgb(0, 0, 0, 0.5);
-}
-nav a:nth-child(2):hover{
-    background-color: #002837;
-    box-shadow: 0 0 1em 0 rgb(0, 0, 0, 0.5);
-}
-nav a:nth-child(3):hover{
-    background-color: #CF467F;
-    box-shadow: 0 0 1em 0 rgb(0, 0, 0, 0.5);
-}
-nav a:nth-child(4):hover{
-    background-color: #61766E;
-    box-shadow: 0 0 1em 0 rgb(0, 0, 0, 0.5);
-}
-
-header {
-    display: flex;
-    background-color: #333;
-}
-
-
-.text-container h1{
-    padding: 0.4em;
-}
 
 main h1{
     width: 30%;
@@ -160,6 +95,10 @@ button p{
     
 }
 
+img{
+    object-fit:scale-down;
+}
+
 .section-two img{
     order:1;
 }
@@ -197,26 +136,7 @@ main h2{
     margin-top: 2em;
 }
 
-footer {
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    padding: 20px;
-}
 
-footer p {
-    font-size: 0.9rem;
-}
-
-footer a {
-    color: #fff;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-footer a:hover {
-    text-decoration: underline;
-}
 
 
 
