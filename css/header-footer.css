@@ -41,20 +41,25 @@ nav a:hover{
 }
 
 nav a:nth-child(1):hover{
-    background-color: #543050;
+    background-color: #61766F;
     box-shadow: 0 0 1em 0 rgb(0, 0, 0, 0.5);
 }
 nav a:nth-child(2):hover{
-    background-color: #002837;
+    background-color: #61766F;
     box-shadow: 0 0 1em 0 rgb(0, 0, 0, 0.5);
 }
 nav a:nth-child(3):hover{
-    background-color: #CF467F;
+    background-color: #61766F;
     box-shadow: 0 0 1em 0 rgb(0, 0, 0, 0.5);
 }
 nav a:nth-child(4):hover{
     background-color: #61766E;
     box-shadow: 0 0 1em 0 rgb(0, 0, 0, 0.5);
+}
+
+.nav-link.active{
+    font-weight: bold;
+    background-color: aqua;
 }
 
 header {

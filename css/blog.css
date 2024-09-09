@@ -1,0 +1,17 @@
+nav a:nth-child(3){
+    background-color: #61766F;
+    border-radius: 0.3em;
+}
+
+h1{
+    padding: 2em;
+}
+
+.post-excerpt{
+    padding: 2em;
+    box-shadow: 0 0 1em 0 rgb(0, 0, 0, 0.1);
+}
+
+.post-excerpt a{
+    color:#61766F
+}

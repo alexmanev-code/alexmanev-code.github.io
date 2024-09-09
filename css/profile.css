@@ -1,26 +1,37 @@
 
-
+nav a:nth-child(1){
+    background-color: #61766F;
+    border-radius: 0.3em;
+}
 
 
 .image-container{
+    background-image: url(../images/person.jpg);
     border: 2px solid black;
-    max-width: 80%;
     margin: 1em auto;
-    height: 24em;
+    height: 5em;
+    border-radius: 0.5em;
+    width: 100px;
     object-fit: scale-down;
     box-shadow: 0 0 1em 0 rgb(0, 0, 0,0.1);
 }
 
 div.image-container{
 
-    background-repeat:round;
-  
     background-size: contain;
-    width: 100%;
+    width: 220px;
+    height: fit-content;
+    aspect-ratio: 1/1;
   
-  }
+}
 
-p.quote{
+.characteristics{
+    width: 50%;
+    margin: 0 auto;
+    border: 2px solid #333;
     text-align: center;
-    font-style: italic;
+}
+
+.characteristics ul {
+    list-style:inside;
 }

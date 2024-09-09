@@ -1,3 +1,13 @@
+nav a:nth-child(2){
+    background-color: #61766F;
+    border-radius: 0.3em;
+}
+
+main h1{
+    text-align: center;
+    margin: 1em auto 2em auto
+}
+
 table,tr,th,td{
     border: 1px solid black;
     border-collapse: collapse;
@@ -12,7 +22,7 @@ td{
 
 th{
     padding: 1em;
-    background-color: rgb(15, 79, 79);
+    background-color: #282C35;
 }
 
 table{
@@ -20,13 +30,46 @@ table{
 }
 
 .quarter{
-    background-color: #033a4e;
+    background-color: #3E4452;
 
 }
 
 td:not(.quarter){
-    background-color: rgb(12, 58, 42);
+    background-color: #545C6F;
 
 }
+
+.progress-bar{
+    margin: 2em 2em 0 2em;
+    background-color: #282C35;
+    height: 2em;
+    z-index: 1;
+}
+
+.progress-bar::before{
+    content: '0%';
+    margin: 1em;
+}
+
+
+.progress-bar + h2{
+    text-align: center;
+}
+
+.nbsa-bar{
+    background-color: #453e52;
+    position:relative;
+    top: -30px;
+    left: 1100px;
+    padding: 0.4em;
+    height: inherit;
+    width: 1px;
+}
+
+.nbsa-bar::after{
+    content: 'NBSA';
+}
+
+
 
 

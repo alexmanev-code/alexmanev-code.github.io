@@ -37,7 +37,7 @@ var editable = {
   
       // (C4) DO WHATEVER YOU WANT
       if (editable.ccell.innerHTML != editable.cval) {
-        /* VALUE CHANGED */
+        /* VALUE CHANGED */ 
         console.log(editable.ccell.innerHTML);
       }
     }

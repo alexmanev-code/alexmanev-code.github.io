@@ -20,8 +20,7 @@ main h1{
     align-items: center;
     justify-content: center;
     max-width: 1000px;
-    margin: 4em auto;
-    height: fit-content;
+    margin: 1em 0 1em 10em;
 }
 #sidebar {
     padding: 20px;
@@ -126,6 +125,7 @@ p.typewriter{
 
 ul li{
     padding: 1em;
+    list-style:inside;
 }
 
 
