@@ -27,5 +27,5 @@ function showParagraph(paraNumber) {
 }
 
 document.addEventListener("DOMContentLoaded", function () {
-    showParagraph(1);});
+    showParagraph(1)});
     

@@ -48,7 +48,6 @@ td:not(.quarter){
 
 .progress-bar::before{
     content: '0%';
-    margin: 1em;
 }
 
 
