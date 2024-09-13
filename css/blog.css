@@ -1,17 +1,38 @@
 nav a:nth-child(3){
-    background-color: #61766F;
-    border-radius: 0.3em;
+    border-bottom: 2px solid #11100d;
 }
 
 h1{
-    padding: 2em;
+    text-align: center;
+    padding: 1em;
 }
 
-.post-excerpt{
-    padding: 2em;
-    box-shadow: 0 0 1em 0 rgb(0, 0, 0, 0.1);
+h3{
+    margin: 0 auto;
+    text-align: center;
 }
 
-.post-excerpt a{
-    color:#61766F
+.posts{
+    margin: 1em auto;
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    gap: 1em;
+}
+
+   
+
+.posts a{
+    flex: 0 0 30%;
+    padding: 2em;
+    border-radius: 1em;
+    box-shadow: 0 0 1em 0 rgb(0, 0, 0, 0.2);
+    transition: all 0.3s ease-in-out;
+    text-decoration: none;
+    color: initial;
+}
+
+.posts a:hover{
+    cursor: pointer;
+    font-size: 1.1em;
 }

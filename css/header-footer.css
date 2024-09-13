@@ -7,82 +7,93 @@
     box-sizing: border-box;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 body{
     font: 20px/1.5 Lato, sans-serif;
-    background-color: #262626;
-    color: white;
+    background-color: #f5e9e0;
+    color: #11100d;
 }
 
-
-header h1 a{
+header > a{
+    font-size: 2em;
+    color: #0f0903;
+    align-self: center;
     text-decoration: none;
-    color: #eee;
+    position: absolute;
+    padding-left: 2em;
+    font-weight: bold;
+    transition: all 0.3s ease-in-out;
 }
+
 
 nav{
+    position: relative;
+    margin: 0 auto;
     display: flex;
-    flex-wrap: wrap;
-    max-width: 30%;
-    margin: 1em auto;   
+    max-width: 30%; 
     text-align: center;
-    justify-content:center;
-    color: #000000;
+    color: #0f0903;
+    transition: all 0.3 ease-in-out;
 }
 
+
+/*
+
+<!--Demo-->
+ reactive header
+.nav-scrolled{
+    margin: 0 auto;
+}
+
+.nav-a-scrolled{
+    padding: 0.2em;
+    margin: 0.2em;
+}
+
+*/
+
 nav a{
-    color: black;
+    font-weight: bold;
+    color: #11100d;
     text-decoration: none;
-    padding: 0.7em;
+    padding: 0.5em;
     margin: 0.5em;
-    border-radius: 4em;
-    background: #eee;
-    box-shadow: 0 0 1em 0 rgb(0, 0, 0, 0.1);
+    font-size: 1em;
+    transition: all 0.3s ease-in-out;
 }
 
 nav a:hover{
-    color:white;
-    transition: background-color 0.2s ease-out;
-
+    color:#938a78;
+    transition: background-color 0.3s ease-in-out;
 }
 
-nav a:nth-child(1):hover{
-    background-color: #61766F;
-    box-shadow: 0 0 1em 0 rgb(0, 0, 0, 0.5);
-}
-nav a:nth-child(2):hover{
-    background-color: #61766F;
-    box-shadow: 0 0 1em 0 rgb(0, 0, 0, 0.5);
-}
-nav a:nth-child(3):hover{
-    background-color: #61766F;
-    box-shadow: 0 0 1em 0 rgb(0, 0, 0, 0.5);
-}
-nav a:nth-child(4):hover{
-    background-color: #61766E;
-    box-shadow: 0 0 1em 0 rgb(0, 0, 0, 0.5);
-}
 
-.nav-link.active{
-    font-weight: bold;
-    background-color: aqua;
-}
+
 
 header {
     display: flex;
-    background-color: #333;
+    background-color: transparent;
+    box-shadow: 0 0 1em 0 rgb(0, 0, 0, 0.3);
+    backdrop-filter: blur(8px);
     position: sticky;
     top: 0;
+    transition: height 0.3s ease-in-out;
 }
+
 
 
 .text-container h1{
     padding: 0.4em;
 }
 footer {
-    background-color: #333;
-    color: #fff;
+    
+    color: #11100d;
+    background-color: #f5e9e0;
     text-align: center;
-    padding: 20px;
+    padding: 1em;
 }
 
 footer p {
@@ -90,7 +101,7 @@ footer p {
 }
 
 footer a {
-    color: #fff;
+    color: #11100d;
     text-decoration: none;
     font-weight: bold;
 }
@@ -99,10 +110,12 @@ footer a:hover {
     text-decoration: underline;
 }
 
-@media (max-width: 1200px) {
+
+@media (max-width: 800px) {
     nav{
+        display: flex;
+        flex-wrap: wrap;
         float: left;
-        background: transparent;
     }
     header{
         width: 500px;

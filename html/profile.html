@@ -6,12 +6,11 @@
     <title>Profile</title>
     <link rel="stylesheet" href="../css/header-footer.css">
     <link rel="stylesheet" href="../css/profile.css">
+    <script src="https://kit.fontawesome.com/6c99b07d5a.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <header>
-        <div class="text-container">
-            <h1><a href="../index.html">Home</a></h1>
-        </div>
+        <a href="../index.html">Home</a>
         <nav >
             <a href="profile.html">Profile</a>
             <a href="dashboard.html">Dashboard</a>
@@ -19,20 +18,147 @@
             <a href="faq.html">FAQ</a>
         </nav>
     </header>
+    
+    <main>
+        <aside>
+            <div class="top">
+                <div class="image-container">
+                </div>
+                <div id="p-info" class="info">
+                    <p>Aleksandar Manev</p>
+                    <p>Software developer</p>
+                </div>
+            </div>
+            <div class="contact">
+                
+                    <button class="accordion">Contact Me</button>
+                    <div class="contact-info panel">
+                        <a href="https://github.com/alex-manev" target="_blank"><i class="fa-brands fa-github fa-2xl"></i></a>
+                        <i class="fa-solid fa-envelope fa-2xl" style="color: #000000;"></i>
+                        <i class="fa-solid fa-phone fa-2xl" style="color: #000000;"></i>
+                    </div>
+            </div>
+        </aside>
+        <article>
+            <h4 id="learn">Learn more about my interests</h4>
+            <div class="interests">
+                <button class="show-popup books">
+                    <p><i class="fa-solid fa-book fa-2xl" style="color: #FFD43B;"></i>Books</p>
+                </button>
 
-    <div class="image-container">
+                <div class="popup-container books">
+                    <div class="popup-box books">
+                        <h1>Reading <3 </h1>
+                        <p>I love books because they offer a gateway to new worlds, ideas, and emotions, allowing me to escape and reflect. I find a special connection with Japanese literature, which often weaves together elements of the surreal and the everyday in a way that deeply resonates with me. Haruki Murakami is my favorite author; his storytelling has a unique blend of mystery, introspection, and magical realism that I find captivating. His works always leave me thinking about life from a different perspective.</p>
+                        <button class="close-btn books">OK</button>
+                    </div>
+                </div>
+
+                <button class="show-popup movies">
+                    <p><i class="fa-solid fa-film fa-2xl" style="color: #B197FC;"></i>Movies</p>
+                </button>
+
+                <div class="popup-container movies">
+                    <div class="popup-box movies">
+                        <h1>Media</h1>
+                        <p>I’m a huge fan of movies and TV series, and two of my all-time favorites are the Star Wars series and Breaking Bad. Star Wars captivates me with its epic storytelling, memorable characters, and the vast universe it creates—there’s always something new to discover in that galaxy far, far away. On the other hand, Breaking Bad stands out for its intense character development and gripping narrative. The way it explores moral dilemmas and the transformation of Walter White makes it one of the most compelling shows I’ve ever watched.</p>
+                        <button class="close-btn movies">OK</button>
+                    </div>
+                </div>
+
+                <button class="show-popup games">
+                    <p><i class="fa-sharp fa-solid fa-gamepad fa-2xl" style="color: #74C0FC;"></i>Games</p>
+                </button>
+
+                <div class="popup-container games">
+                    <div class="popup-box games">
+                        <h1>Games</h1>
+                        <p>I love computer games because they offer a fun escape, challenge my mind, and let me connect with friends. I especially enjoy playing League of Legends. I do like playing other games, but this one has a place in my heart.(Peak rank: Plat-Solo/Duo btw)</p>
+                        <button class="close-btn games">OK</button>
+                    </div>
+                </div>
+
+                <button class="show-popup workout">
+                    <p><i class="fa-solid fa-dumbbell fa-2xl" style="color: #e12d2d;"></i>Workout</p>
+                </button>
+
+                <div class="popup-container workout">
+                    <div class="popup-box workout">
+                        <h1>Working out</h1>
+                        <p>I love working out because it keeps me physically and mentally strong. It gives me a sense of accomplishment and boosts my energy levels, helping me stay focused and productive throughout the day. Beyond the physical benefits, working out is also a great way to relieve stress and clear my mind. It’s a time where I can challenge myself, push my limits, and improve both my health and well-being.</p>
+                        <button class="close-btn workout">OK</button>
+                    </div>
+                </div>
+
+                <button class="show-popup social">
+                    <p><i class="fa-solid fa-user-group fa-2xl" style="color: #74C0FC;"></i>Socializing</p>
+                </button>
+
+                <div class="popup-container social">
+                    <div class="popup-box social">
+                        <h1>Being social</h1>
+                        <p>I love being social because it allows me to connect with a variety of people, exchange ideas, and gain new perspectives. It’s a great way to build lasting friendships and expand my understanding of the world. In university, networking is especially valuable as it opens doors to opportunities, whether it's collaborating on projects, learning from others' experiences, or even setting the foundation for future professional connections. Being social in these environments helps me grow both personally and academically.</p>
+                        <button class="close-btn social">OK</button>
+                    </div>
+                </div>
+
+                <button class="show-popup prom">
+                    <p><i class="fa-solid fa-terminal fa-2xl" style="color: #63E6BE;"></i>Coding</p>
+                </button>
+
+                <div class="popup-container prom">
+                    <div class="popup-box prom">
+                        <h1>Programming</h1>
+                        <p>I love programming because it’s a powerful way to solve problems and bring ideas to life. It’s incredibly satisfying to build something from scratch and see it work as intended. The constant learning and problem-solving keep me engaged and motivated. Plus, programming offers endless possibilities for creativity and innovation, allowing me to tackle challenges in unique ways and continuously improve my skills.</p>
+                        <button class="close-btn prom">OK</button>
+                    </div>
+                </div>
+            </div>
+        </article>
+    </main>
+    <div class="bio">
+        <div class="about">
+            <p class="about-heading">Hi, my name is Aleksandar Manev</p>
+            <p class="about-subheading">19yo, ICT student</p>
+            <div class="info">I was previously enrolled in the Maths and Science High School Blagoevgrad
+            During my time there I studied Programming/Maths extensively.
+            </div>
+            <br>
+            <p class="about-heading">More about me</p>
+
+            <div class="info">
+                <p>I was born in Blagoevgrad/Bulgaria</p>
+                <p>I love improving my mindset and I usually achieve that by reading psychology-based literature (mostly japanese authors)</p>
+                <p>My favorite fruit is the raspberry</p>
+                <p>If I had to describe myself in one word, it would be: "<b>curious</b>"</p>
+            </div>
+            <br>
+
+            <p class="about-heading">
+                Hobbies
+            </p>
+
+            <div class="info">
+                One thing about me is the fact that I always find myself invested in way too many hobbies. Way more than my schedule can handle. However, I do not think of it as a bad thing. Ot helps me discover myself as a person, thereby understanding what I like, and what I do not. Though out the years I've picked up quite many but the ones I am most excited about are listed at the top.
+            </div>
+
+            <div class="char">
+                <h3>Characteristics that describe me</h3>
+                <ul>
+                    <li>Open to new experiences</li>
+                    <li>Trying to stay organized</li>
+                    <li>Adaptive to situations</li>
+                    <li>Resilient</li>
+                    <li>Sympathetic towards animals (and people sometimes)</li>
+                </ul>
+            </div>
+        </div>
+
+        
     </div>
-
-    <div class="characteristics">
-        <ul>
-            <li>
-                Name: Aleksandar Ivanov Manev
-            </li>
-        </ul>
-    </div>
-
     <footer>
-        <p>Explore the site | <a href="https://pages.github.com/">Hosted on GitHub Pages</a></p>
-    </footer>
+            <p>Explore the site | <a href="https://pages.github.com/">Hosted on GitHub Pages</a></p>
+        </footer>
+    <script src="../js/profile.js"></script>
 </body>
 </html>

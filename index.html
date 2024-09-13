@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Profile</title>
     <link rel="stylesheet" href="../css/index.css">
-    <link rel="stylesheet" href="/typewriter.css">
+    <link rel="stylesheet" href="/css/typewrite.css">
     <link rel="stylesheet" href="css/header-footer.css">
     <script src="js/index.js"></script>
 </head>
@@ -13,7 +13,8 @@
 
 <body>
     <header>
-        <nav >
+        <a href="index.html">Home</a>
+        <nav>
             <a href="html/profile.html">Profile</a>
             <a href="html/dashboard.html">Dashboard</a>
             <a href="html/blog.html">Blog</a>
@@ -21,93 +22,53 @@
         </nav>
     </header>
     
-    
     <main>
-        <h1 class="typewriter">
-            Hello, I'm Alex
-        </h1>
-        <p class="typewriter">and I am a future professional developer            </p>
-
-
-        <article class="section-one">
-            <img src="/images/creativity.jpg" alt="cover photo of a girl programmer">
-            <div class="section-info">
-                
-                <h3>
-                    My place in the IT world
-                </h3>
-                <p>
-                    My place in the IT world began when I was first introduced to programming in the 8th grade. C# was my first coding language, and while I didn't excel at it right away, something about it intrigued me. Over time, as I started working on personal projects, my skills improved, and I began to understand the nuances of coding. What started as a challenging subject eventually became a passion, and each new project fueled my interest even further.                    
-                </p>
-            </div>
-        </article>
-        
-        <article class="section-two">
-            <img src="/images/helloworld.jpg" alt="a photo of a computer screen">
-            <div class="section-info">
-                
-                <h3>
-                   Fit for ICT?
-                </h3>
-                <p>
-                    I believe I'm a good fit for the ICT world because I genuinely enjoy creating things and have a real drive to solve problems. Starting out with programming through personal projects helped me pick up skills quickly, and I love how the field pushes me to keep learning and thinking outside the box.                </p>
-            </div>
-        </article>
-        
-        
-        
-        
-        <h2>Read more</h2>
-        
-        <div id="container">
-            <div id="sidebar">
-                <button id="hamburger" onclick="toggleSidebar()">&#9776;</button>
-                <div id="sidebar-content" class="sidebar-content">
-                    <button onclick="showParagraph(1)"><p>Preferences</p></button>
-                    <button onclick="showParagraph(2)"><p>Why HBO-ICT?</p></button>
-                </div>
-            </div>
-            <div id="content">
-                <p id="para1" class="hidden">
-                    <ul id="list" class="hidden">
-                        <li>
-                            <h3>Operating System?</h3>
-                            <p>I prefer using Windows as my operating system because it's familiar and fits well with my workflow.</p>
-                        </li>
-                        <li>
-                            <h3>IDE?</h3>
-                            <p>Over the years, I've spent a lot of time in Visual Studio, but I now lean towards VS Code for its flexibility and streamlined experience, making it my go-to IDE.</p>
-                        </li>
-                        <li>
-                            <h3>Coding Language?</h3>
-                            <p>When it comes to programming languages, C# will always be a favorite of mine since it was the first language I learned and the one that sparked my interest in coding. That said, I'm currently exploring JavaScript, and it’s starting to grow on me. With its versatility and wide range of uses, I think it could eventually replace C# as my number one language.</p>
-                        </li>
-                    </ul>
-                    </p>
-                    <p id="para2" class="hidden">I chose the HBO-ICT program because it perfectly aligns with my passion for technology, innovation, and creativity in today’s hyper-connected world.
-                        <br>
-                        <br>
-                        The program offers me the opportunity to dive deep into the latest technologies, from programming and system management to cloud solutions and cybersecurity, while also fostering my creative problem-solving skills.
-                        <br>
-                        <br>
-                        Working in agile, multidisciplinary teams prepares me for real-world challenges, making this program the ideal path for building a career in one of the most dynamic and impactful fields today.
-                        
-                        <br>
-                        <br>
-                        link to the programme: <a href="https://hz.nl/opleidingen/hbo-ict" target="_blank"><img src="images/hz-logo.png" alt="hz logo"></a>
-                    </p>
-                </div>
-            </div>
+        <div class="intro">
+            <h1 class="typing-demo">Hey, I'm Alex <br><p>a software developer/ICT-Student</p></h1>
             
-        </main>
+            <div class="leading">
+                <p>Where would you like to go first?</p>
+                <div class="container">
+                    
+                    <div class="sec one child bounce">
+                        <h4><a href="#motivation">My motivation</a></h4>
+                    </div>
+                    
+                    <div class="sec one child bounce">
+                        <h4><a href="#ict">Why ICT</a></h4>
+                    </div>
+                    
+                    <div class="sec one child bounce">
+                        <h4><a href="https://hz.nl/opleidingen/hbo-ict" target="_blank"><img src="images/hz-logo.png"></a></h4>
+                    </div>
+                
+                </div>
+            </div>
+        </div>
         
         
         
+        <div id="motivation">
+            <div class="motiv-info">
+                <h2>What is my motivation?</h2>
+                <p>My motivation for programming stems from a deep-seated passion for problem-solving and creativity. I’ve always been fascinated by how code can transform abstract ideas into functional, interactive solutions. When I first encountered programming in 8th grade with C#, it was like discovering a new way to express myself. The challenge of breaking down complex problems and building something from scratch was both exhilarating and rewarding. Over time, as I worked on personal projects and delved into new languages like JavaScript, I realized that programming not only satisfies my curiosity but also aligns with my desire to create and innovate. The ever-evolving nature of technology keeps me constantly engaged and excited about the endless possibilities for learning and growth.</p>
+            </div>
+            <img src="images/monitor1.png" alt="Picture of a monitor">
+        </div>
+        
+        <div id="ict">
+            <div class="ict-info">
+                <h2>What pushed me towards ICT?</h2>
+                <p>I chose the ICT program because I’m excited by how technology connects and transforms our world. From AI to cloud solutions and cybersecurity, the field’s endless possibilities align with my passion for innovation and problem-solving. The program’s focus on technology, creativity, and teamwork offers the perfect environment for me to explore and develop these interests.</p>
+            </div>
+            <img src="images/bro.png" alt="Picture of a person in front of a computer">
+        </div>
         
         
-        
-        <footer>
-            <p>Explore the site | <a href="https://pages.github.com/">Hosted on GitHub Pages</a></p>
-        </footer>
-    </body>
-    </html>
+    </main>
+    
+    <footer>
+        <p>Explore the site | <a href="https://pages.github.com/">Hosted on GitHub Pages</a></p>
+    </footer>
+</body>
+</html>

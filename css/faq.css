@@ -1,4 +1,63 @@
+
 nav a:nth-child(4){
-    background-color: #61766F;
+   border-bottom:2px solid #11100d;
+}
+
+.intro{
+    width: 60%;
+    margin: 1em auto;
+}   
+
+.intro h1{
+    text-align: center;
+    padding: 1em 1em 0.3em 1em;
+}
+
+.intro p{
+    text-align: center;
+    width: 50%;
+    margin: 0 auto;
+    font-size: 0.9em;
+}
+
+.questions{
+    margin: 1em auto;
+    margin-top: 3em;
+    width: 70%;
+}
+
+.collapsible {
+    box-shadow: 0 0 1em 0 rgb(0, 0, 0, 0.1);
     border-radius: 0.3em;
+    background-color: #938a78;
+    color: #11100d;
+    cursor: pointer;
+    padding: 1em;
+    width: 100%;
+    border: none;
+    outline: none;
+    font-size: 15px;
+    text-align: left;
+    transition: all 0.3s ease-in-out;
+    margin-top: 2em;
+}
+
+
+
+.active, .collapsible:hover {
+    background-color: #9eaf9b;
+}
+
+
+
+.content {
+    background-color: #9eaf9b;
+    transition: all 0.3s ease-in-out;
+    margin-top: 0.5em;
+    padding: 2em;
+    display: none;
+    overflow: hidden;
+    text-align: left;
+    border-radius: 0.3em;
+    box-shadow: 0 0 1em 0 rgb(0, 0, 0, 0.1);
 }
