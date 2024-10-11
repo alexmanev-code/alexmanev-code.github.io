@@ -75,8 +75,8 @@ a > img{
 
 #ict{
     background-color: #9eaf9b;
-    flex-direction: column;
     overflow: hidden;
+    display: flex;
 }
 
 #ict h2{
@@ -91,6 +91,43 @@ a > img{
 #ict img{
     margin: -3em auto;
     width: 50%;
+}
+
+#ict .list{
+    align-content: center;
+    flex:1 1 25%;
+    position: relative;
+    top: 3em;
+    list-style:inside;
+}
+
+#ict .list:nth-child(1){
+left: 5em;
+}
+
+
+#ict .list:nth-child(3){
+    right: 5em;
+}
+
+#ict .list ul>p{
+    width: 100%;
+    font-size: 1.3em;
+    font-weight: bold;
+    margin-bottom: 0.7em;
+}
+
+#ict .list ul li+li{
+padding-top: 0.6em;
+}
+
+.ict-info{
+    margin-top: 1em;
+    flex: 1 1 60%;
+}
+
+.ict-info h2{
+    margin-bottom: 0.3em;
 }
 
 .child {
