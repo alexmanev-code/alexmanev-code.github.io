@@ -20,10 +20,7 @@ h3{
     gap: 1em;
 }
 
-   
-
 .posts a{
-    flex: 0 0 30%;
     padding: 2em;
     border-radius: 1em;
     box-shadow: 0 0 1em 0 rgb(0, 0, 0, 0.2);
@@ -33,6 +30,7 @@ h3{
 }
 
 .posts a:hover{
+    background-color: #dbccc2;
     cursor: pointer;
     font-size: 1.1em;
 }

@@ -64,8 +64,9 @@ td:not(.quarter){
     width: 1px;
 }
 
-.nbsa-bar::after{
-    content: 'NBSA';
+.nbsa{
+    text-align: center;
+margin: 0 auto;
 }
 
 

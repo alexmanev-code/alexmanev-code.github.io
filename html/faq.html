@@ -17,89 +17,83 @@
             <a href="faq.html">FAQ</a>
         </nav>
     </header>
-    
+
     <main>
         <div class="intro">
             <h1>Frequently Asked Questions</h1>
-            
             <p>The questions and answers here focus on everyday challenges or curiosities you’ve encountered.</p>
         </div>
-        
+
         <div class="questions">
 
-        
-        <button type="button" class="collapsible">1. How can you print a document from your laptop at HZ?</button>
-        <div class="content">
-            <div>
-                <p>Printing from your laptop can be done using <a href="https://hz.mynetpay.nl/">this link.</a></p>
-
-                <p>Follow these steps:</p>
-
-                <br>
-                <ol>
-                    <li>Choose your printing options</li>
-                    <li>Upload the files you wish to print</li>
-                    <li>Press Upload files</li>
-                    <li>Go to the multifunctional printer and use your HZ pass on the TouchID</li>
-                    <li>Make sure you have enough funds in your account</li>
-                    <li>Select "Print"</li>
-                    <li>Congratulations, you just printed your first documents in HZ!</li>
-                    <li>Once you are done, press "Stop" and click "Logout" in the menu</li>
-                </ol>
+            <button type="button" class="accordion">1. How can you print a document from your laptop at HZ?</button>
+            <div class="contact-info panel">
+                <div>
+                    <p>Printing from your laptop can be done using <a href="https://hz.mynetpay.nl/">this link.</a></p>
+                    <p>Follow these steps:</p>
+                    <br>
+                    <ol>
+                        <li>Choose your printing options</li>
+                        <li>Upload the files you wish to print</li>
+                        <li>Press Upload files</li>
+                        <li>Go to the multifunctional printer and use your HZ pass on the TouchID</li>
+                        <li>Make sure you have enough funds in your account</li>
+                        <li>Select "Print"</li>
+                        <li>Congratulations, you just printed your first documents in HZ!</li>
+                        <li>Once you are done, press "Stop" and click "Logout" in the menu</li>
+                    </ol>
+                </div>
             </div>
-        </div>
-        <button type="button" class="collapsible">2. How can you scan a document and send it to your laptop at HZ?
-        </button>
-        <div class="content">
-            <div>
-                <p>Scanning documents is completely FREE. However, you must have at least €0.07 worth of credits in your HZ pass balance in order to proceed.</p>
-                <br>
-                <ol>
-                    <li>Register using your HZ pass on the TouchID</li>
-                    <li>In the TouchID menu, select the "Scan" option</li>
-                    <li>Follow the scanning steps</li>
-                    <li>Once you are done, press "Stop" on the TouchID and click "Logout"</li>
-                    <li>Good job, you scanned your first documents!</li>
-            </ol>
+
+            <button type="button" class="accordion">2. How can you scan a document and send it to your laptop at HZ?</button>
+            <div class="contact-info panel">
+                <div>
+                    <p>Scanning documents is completely FREE. However, you must have at least €0.07 worth of credits in your HZ pass balance in order to proceed.</p>
+                    <br>
+                    <ol>
+                        <li>Register using your HZ pass on the TouchID</li>
+                        <li>In the TouchID menu, select the "Scan" option</li>
+                        <li>Follow the scanning steps</li>
+                        <li>Once you are done, press "Stop" on the TouchID and click "Logout"</li>
+                        <li>Good job, you scanned your first documents!</li>
+                    </ol>
+                </div>
             </div>
+
+            <button type="button" class="accordion">3. How can I buy something (like when I sign up for the IT introduction event) on the HZ web shop?</button>
+            <div class="contact-info panel">
+                <p>Visit the HZ webshop, pick the items you like, then go to your shopping cart and check out! <3 </p>
+            </div>
+
+            <button type="button" class="accordion">4. How can you book a project space?</button>
+            <div class="contact-info panel">
+                <p>You can book a project space by visiting the <a href="https://hzuniversity.topdesk.net/tas/public/ssp/">Self Service Portal.</a></p>
+            </div>
+
+            <button type="button" class="accordion">5. What are the instructions if you want to park your car at the HZ parking lot?</button>
+            <div class="contact-info panel">
+                <p>You have to reveal your HZ pass at the barriers, then you can park in the lot of the university</p>
+            </div>
+
         </div>
-        <button type="button" class="collapsible">3. How can I buy something (like when I sign up for the IT introduction event) on the HZ web shop?
-        </button>
-        <div class="content">
-            <p>Visit the HZ webshop, pick the items you like, then go to your shopping cart and check out! <3 </p>
-        </div>
-        <button type="button" class="collapsible">4. How can you book a project space?
-        </button>
-        <div class="content">
-            <p>You can book a project space by visiting the <a href="https://hzuniversity.topdesk.net/tas/public/ssp/">Self Service Portal.</a></p>
-        </div>
-        <button type="button" class="collapsible">5. What are the instructions if you want to park your car at the HZ parking lot?</button>
-        <div class="content">
-            <p>You have to reveal your HZ pass at the barriers, then you can park in the lot of the university</p>
-        </div>
-    </div>
+
     </main>
-    
-    
-    
-    
 
     <footer>
         <p>Explore the site | <a href="https://pages.github.com/">Hosted on GitHub Pages</a></p>
     </footer>
-    
+
     <script>
-        var coll = document.getElementsByClassName("collapsible");
-        var i;
-        
-        for (i = 0; i < coll.length; i++) {
-            coll[i].addEventListener("click", function() {
+        // Accordion functionality for the FAQ and Contact Me sections
+        var acc = document.getElementsByClassName("accordion");
+        for (let i = 0; i < acc.length; i++) {
+            acc[i].addEventListener("click", function() {
                 this.classList.toggle("active");
-                var content = this.nextElementSibling;
-                if (content.style.display === "block") {
-                    content.style.display = "none";
+                var panel = this.nextElementSibling;
+                if (panel.style.maxHeight) {
+                    panel.style.maxHeight = null;
                 } else {
-                    content.style.display = "block";
+                    panel.style.maxHeight = panel.scrollHeight + "px";
                 }
             });
         }

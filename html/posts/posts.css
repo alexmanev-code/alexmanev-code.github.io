@@ -1,12 +1,9 @@
 main{
-    padding: 3em;
-    background-color: #bac1b2;
+    padding: 2em;
 }
 
 
 .container{
-    box-shadow: 0 0 1em 0 rgb(0, 0, 0, 0.2);
-    background-color:#9eaf9b;
     border-radius: 0.4em;
     padding: 1em;
     font-size: 1em;
@@ -14,21 +11,24 @@ main{
 
 h2{
     font-size: 2.5em;
-    padding: 1em;
-    text-align: center;
+    padding: 0.3em;
+    text-align: left;
 }
 
 .content{
+    background-color: #ebdcd2;
     margin: 0 auto;
     width: 80%;
     padding: 2em;
     border-radius: 0.4em;
-    background-color:#bbb4a8 ;
     box-shadow: 0 0 1em 0 rgb(0, 0, 0, .1);
 }
 
+h2{
+    text-align: center;
+}
 
-
-p + p{
-    margin-top: 1em;
+ h4{
+    padding:1em;
+    font-size: 1.3em;
 }
